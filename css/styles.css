@@ -1,51 +1,64 @@
-
-.body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-.nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.nav ul li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-.nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer {
-    text-align: center;
-    padding: 3rem;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-@media (max-width: 600px) {
-    .header, .footer {
-        padding: 1rem;
+  body {
+      margin: 0;
+      background-color: #111;
+      color: #00aeff;
+      font-family: 'Press Start 2P', 'Best10', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
     }
 
-    .nav ul li {
-        display: block;
-        margin: 0.5rem 0;
+    .screen {
+      background: #222;
+      border: 4px solid #00aeff;
+      padding: 2rem;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 20px #00aeff;
+      text-align: center;
     }
-}
+
+    h1 {
+      font-size: 1.44rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .status {
+      text-align: left;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
+    .status span {
+      color: #ffffff;
+    }
+
+    .buttons a {
+      display: inline-block;
+      background: #00aeff;
+      color: #111;
+      padding: 0.6rem 1.2rem;
+      margin: 0.3rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border: 2px solid #00aeff;
+      transition: all 0.2s;
+    }
+
+    .buttons a:hover {
+      background: #111;
+      color: #00aeff;
+    }
+
+    @media (max-width: 500px) {
+      .status {
+        font-size: 0.78rem;
+      }
+
+      .buttons a {
+        font-size: 0.78rem;
+      }
+    }
