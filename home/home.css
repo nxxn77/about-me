@@ -1,0 +1,60 @@
+/* ドラクエ風スタイル v3 */
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+body {
+  background-color: #002b36;
+  color: white;
+  font-family: 'DotGothic16', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window {
+  background-color: #001f27;
+  border: 4px solid white;
+  padding: 30px 40px;
+  width: 95%;
+  max-width: 900px;
+  min-height: 400px;
+  box-shadow: 0 0 20px #00aeff;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+.large-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.buttons button {
+  background-color: #002b36;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  min-width: 120px;
+}
+
+.buttons button:hover {
+  background-color: #00aeff;
+  color: #002b36;
+  box-shadow: 0 0 10px #00aeff;
+}
